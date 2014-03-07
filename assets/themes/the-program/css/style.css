@@ -1483,9 +1483,39 @@ hr {
   float: right;
 }
 
-.pagination {
-  padding-bottom: 1em;
+
+/*customer style*/
+.pagination {  
+  padding: 1em 0;
 }
 .pagination .nextPage{
   float: right;
+}
+
+.list-page-blog-title{
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.list-page-article{
+  border-bottom: 1px solid gray;  
+  margin-top:21px;
+}
+
+.list-page-blog-date{
+  display: inline-block;
+  float: right;
+  line-height: 52px;
+}
+.list-page-article header{
+  border: none;
+  vertical-align:bottom;
+}
+
+.about-me p{
+  margin-bottom: 12px;
+}
+
+.about-me .about-me-why-love{
+  padding-left: 30px;
 }

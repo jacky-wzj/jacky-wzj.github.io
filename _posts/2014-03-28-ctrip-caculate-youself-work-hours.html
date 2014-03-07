@@ -1,0 +1,35 @@
+---
+layout : post
+tag : bookmarklet
+title : Ctrip caculate youself work hours
+---
+
+<style>
+.highLight{
+	color:red;
+	font-weight: bolder;
+}
+.faq{
+	text-align: right;
+	padding-bottom: 20px;
+}
+</style>
+	<h3>基于打卡记录的工时统计脚本</h3>
+	<i>基于JS + Bookmarklet</i>
+	<p>想统计自己工作日，工作时间和平均工时吗？按照下面的步骤操作吧.</p>
+	<div>
+		<ol>
+			<li>鼠标左击打下面( _不松开鼠标_ ) **计算工时** ，拖动到浏览器收藏夹栏。</li>
+			<li>登录OA系统，并查看自己的打卡记录.</li>
+			<li>点击*计算工时*</li>
+			<li>耐心等待5秒钟，结果就出来啦。</li>
+		</ol>
+	</div>
+<a alr='计算工时' class='highLight' href='javascript:function caculateWorkHours(){function e(){function u(e){var t=e.split("~");var n=a(t[0]);var r=a(t[1]);var i=r-n;var s=Math.floor(i/1e3/60);return s}function a(e){var t=new Date;var n=new Date;var r=e.split(":");t.setHours(r[0]);t.setMinutes(r[1]);return t}var e=[];var t=$(window.frames["Main"].document).find("td[align=center]").toArray();for(var n=0;n<t.length;n++){var r=t[n];var i=r.innerText;var s=r.innerHTML;if(i.indexOf("~")>0&&s.indexOf("table")<0)e.push(i)}var o=0;e.forEach(function(e){o+=u(e)});return{workHours:o/60,workDays:e.length}}return function(n){var r=e();var i="当月你工作了 "+r.workHours+" 小时。";var s="当月你工作了 "+r.workDays+"天。";var o="当月你每天的工时为："+r.workHours/r.workDays;alert(i+"\n"+s+"\n"+o)}()}(function(){var e=document.createElement("script");e.src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js";document.getElementsByTagName("head")[0].appendChild(e)})();setTimeout(caculateWorkHours,5e3)'>计算工时</a>
+
+
+<div class='faq'>
+<div>在Chrome 和IE 11下测试通过</div>
+<div><a href="https://github.com/jacky-wzj/code-snippet/blob/master/ctrip_caculate_work_hours.js">查看源代码</a></div>
+</div>
+
