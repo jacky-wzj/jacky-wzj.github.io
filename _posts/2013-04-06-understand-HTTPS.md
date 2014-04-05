@@ -1,6 +1,5 @@
 ---
 layout: post
-tags: understand https
 ---
 *Convert pfx*
 - openssl pkcs12 -in domain.pfx -clcerts -nokeys -out domain.cer
