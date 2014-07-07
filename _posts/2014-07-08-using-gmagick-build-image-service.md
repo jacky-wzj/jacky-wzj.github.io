@@ -19,3 +19,6 @@ layout: post
 
 - intalll php-pecl-gmagick  
 	yum install php-pecl-gmagick
+
+
+> yum using rpm ,so we can using rpm -ql ** to list the location of package
