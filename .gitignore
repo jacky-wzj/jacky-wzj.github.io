@@ -8,3 +8,9 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+
+.idea/*
+
+*~
+*.swp
+*.swo
