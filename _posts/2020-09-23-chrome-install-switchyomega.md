@@ -1,6 +1,6 @@
 ---
-layout : post  
 title : chrome install the proxy swtichomega
+layout: post  
 ---
 
 chrome不能手动安装proxy switchomega 的解决办法
